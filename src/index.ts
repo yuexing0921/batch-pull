@@ -36,7 +36,8 @@ export const run = (option: CliOption) => {
     };
   });
   async.series(series, (error, result) => {
-    console.log(result);
-    console.error(error);
+    if (error) {
+      console.error(error);
+    }
   });
 };
