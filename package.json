@@ -1,6 +1,6 @@
 {
   "name": "batch-pull",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Batch pull the latest git code",
   "main": "./dist/index.js",
   "author": "yuexing0921@gmail.com",
