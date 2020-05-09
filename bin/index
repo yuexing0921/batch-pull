@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+const { getFilesInfo } = require("../dist/utils")
+const Glob = require("glob").Glob
+const { run } = require("../dist");
+
+
+const yargs = require("yargs").options({
+	dir: {
+		alias: "d",
+		describe: "",
+        type: "string",
+		demandOption: true,
+		default: "./"
+	},
+	branch: {
+		alias: "o",
+		describe: "branch",
+		type: "string",
+		default: "master"
+	} 
+});
+
+const argv = yargs.argv;
+
+var pattern = argv.dir + "*"
+
+let projects  = []
+new Glob(pattern, {mark: true, sync:false},  (err, matches)=> {
+	if(err){
+		console.error('Glob error: ', err);
+		return err
+	}
+	projects =  getFilesInfo(matches).filter(k => k.git)
+	const buildOption = {
+		projects: projects.map(k => k.name),
+		branch: argv.branch,
+	};
+
+	run(buildOption);
+})
+  
+
