@@ -34,9 +34,11 @@
   },
   "dependencies": {
     "@types/async": "^3.2.1",
+    "@types/consola": "^2.2.5",
     "@types/glob": "^7.1.1",
     "async": "^3.2.0",
     "chalk": "^2.4.2",
+    "consola": "^2.12.1",
     "glob": "^7.1.6",
     "prettier": "^1.18.2",
     "yargs": "^13.3.0"

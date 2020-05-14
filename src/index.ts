@@ -1,6 +1,7 @@
 import * as path from "path";
 import { shell } from "./utils";
 import async = require("async");
+const console = require('consola');
 
 interface CliOption {
   projects: string[];
@@ -20,24 +21,20 @@ export const run = (option: CliOption) => {
           // @ts-ignore
           if (result.stdout) {
             // @ts-ignore
-            console.log(k, result.stdout);
+            console.info(k, result.stdout);
           }
           // @ts-ignore
           if (result.stderr) {
             // @ts-ignore
-            console.error(k, result.stderr);
+            console.warn(k, result.stderr);
           }
           done(null, result);
         })
         .catch(err => {
           console.error(k, err);
-          done(err, null);
+          done(null,err);
         });
     };
   });
-  async.series(series, (error, result) => {
-    if (error) {
-      console.error(error);
-    }
-  });
+  async.series(series);
 };
