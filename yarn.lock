@@ -51,6 +51,13 @@
   resolved "https://registry.yarnpkg.com/@types/async/-/async-3.2.1.tgz#14dd3f50b1e664ee834a5efdd3c9895f56c1649b"
   integrity sha512-r/lKpgD0b4dz/relMdFUhhSSgP4UmbrEEsxxFMSZkIbbDF2Tehs6xUHlFHGVVFQDfhCoBUqX94vjCNIqbcU21A==
 
+"@types/consola@^2.2.5":
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/@types/consola/-/consola-2.2.5.tgz#f84e2842e44aad1e038dff1abbc1c6bf2dd9e65c"
+  integrity sha512-ttF6wKgTQJfdUBK6zwg/C4kqzFyKqwg8kRdUOj+rn1T0CsrBvgwBn+ILLhfoVGiOY5/FAzLbD/Ld/tSgt7Damg==
+  dependencies:
+    consola "*"
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/@types/events/download/@types/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -263,6 +270,11 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npm.taobao.org/concat-map/download/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+
+consola@*:
+  version "2.15.3"
+  resolved "https://registry.yarnpkg.com/consola/-/consola-2.15.3.tgz#2e11f98d6a4be71ff72e0bdf07bd23e12cb61550"
+  integrity sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==
 
 consola@^2.12.1:
   version "2.12.1"
@@ -488,9 +500,9 @@ get-stream@^5.0.0:
     pump "^3.0.0"
 
 glob-parent@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npm.taobao.org/glob-parent/download/glob-parent-5.0.0.tgz#1dc99f0f39b006d3e92c2c284068382f0c20e954"
-  integrity sha1-HcmfDzmwBtPpLCwoQGg4Lwwg6VQ=
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
+  integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
 
@@ -616,7 +628,7 @@ is-directory@^0.3.1:
 
 is-extglob@^2.1.1:
   version "2.1.1"
-  resolved "https://registry.npm.taobao.org/is-extglob/download/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
+  resolved "https://registry.yarnpkg.com/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
   integrity sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
 
 is-fullwidth-code-point@^1.0.0:
@@ -633,8 +645,8 @@ is-fullwidth-code-point@^2.0.0:
 
 is-glob@^4.0.1:
   version "4.0.1"
-  resolved "https://registry.npm.taobao.org/is-glob/download/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
-  integrity sha1-dWfb6fL14kZ7x3q4PEopSCQHpdw=
+  resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
+  integrity sha512-5G0tKtBTFImOqDnLB2hG6Bp2qcKEFduo4tZu9MT/H6NQv/ghhy30o55ufafxJ/LdH79LLs2Kfrn85TLKyA7BUg==
   dependencies:
     is-extglob "^2.1.1"
 
